@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConPADE</name>
+    </assembly>
+    <members>
+        <member name="F:ConPADE.ConPADE.bamNames">
+            <summary>
+            Path to one or more sorted BAM file(s). If absent, all .bam files in folder will be used.
+            </summary>
+        </member>
+        <member name="F:ConPADE.ConPADE.modelFile">
+            <summary>
+            Path to error model file.
+            </summary>
+        </member>
+        <member name="F:ConPADE.ConPADE.substFile">
+            <summary>
+            Path to substitution model file.
+            </summary>
+        </member>
+        <member name="F:ConPADE.ConPADE.maxPloidy">
+            <summary>
+            Maximum ploidy to evaluate.
+            </summary>
+        </member>
+        <member name="F:ConPADE.ConPADE.SNPthres">
+            <summary>
+            Phred-like threshold for outputting a SNP.
+            </summary>
+        </member>
+        <member name="F:ConPADE.ConPADE.snpDens">
+            <summary>
+            SNP density.
+            </summary>
+        </member>
+    </members>
+</doc>

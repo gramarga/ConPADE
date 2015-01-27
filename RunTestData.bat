@@ -1,0 +1,1 @@
+ConPADE.exe -bamNames TestData.bam
