@@ -4,9 +4,9 @@
         <name>ConPADE</name>
     </assembly>
     <members>
-        <member name="F:ConPADE.ConPADE.bamNames">
+        <member name="F:ConPADE.ConPADE.bamName">
             <summary>
-            Path to one or more sorted BAM file(s). If absent, all .bam files in folder will be used.
+            Path to a sorted BAM file.
             </summary>
         </member>
         <member name="F:ConPADE.ConPADE.modelFile">
@@ -32,6 +32,11 @@
         <member name="F:ConPADE.ConPADE.snpDens">
             <summary>
             SNP density.
+            </summary>
+        </member>
+        <member name="F:ConPADE.ConPADE.splitContigs">
+            <summary>
+            Store results for different contigs in separate files.
             </summary>
         </member>
     </members>

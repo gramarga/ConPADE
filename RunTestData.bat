@@ -1,1 +1,1 @@
-ConPADE.exe -bamNames TestData.bam
+ConPADE.exe -bamName TestData.bam
