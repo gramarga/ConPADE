@@ -4,8 +4,8 @@
 #                                                                    #
 ######################################################################
 #                                                                    #
-# Version 1.0-1                                                      #
-# Last updated: 05/16/2015                                           #
+# Version 1.0-2                                                      #
+# Last updated: 05/25/2015                                           #
 #                                                                    #
 ######################################################################
 
@@ -63,3 +63,6 @@ Version changes:
 - Using updated .Net Bio version 2.0 to fix BAM parsing
 - Output is now combined for all contigs (there is an option to split files for individual contigs)
 - Changed argument from -bamNames to -bamName
+
+* 1.0-2
+- Bug fix: properly ignore not aligned reads
