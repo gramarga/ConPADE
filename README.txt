@@ -4,8 +4,8 @@
 #                                                                    #
 ######################################################################
 #                                                                    #
-# Version 1.0-2                                                      #
-# Last updated: 05/25/2015                                           #
+# Version 1.0-3                                                      #
+# Last updated: 08/26/2015                                           #
 #                                                                    #
 ######################################################################
 
@@ -66,3 +66,7 @@ Version changes:
 
 * 1.0-2
 - Bug fix: properly ignore not aligned reads
+
+* 1.0-3
+- Bug fix: added support for dummy reads in BAM file
+- Bug fix: hard-clipped sequences are now correctly parsed

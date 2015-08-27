@@ -4,6 +4,29 @@
         <name>ConPADE</name>
     </assembly>
     <members>
+        <member name="T:ConPADE.Best_Dose">
+            <summary>
+            Class to store the two alleles, read depths, best allele
+            dosage and posterior probability for each putative SNP.
+            </summary>
+        </member>
+        <member name="M:ConPADE.Best_Dose.#ctor(System.Int64,System.Byte,System.Int32,System.Byte,System.Int32,System.Byte[],System.Double[])">
+            <summary>
+            Standard constructor for class Best_Dose.
+            </summary>
+            <param name="position">Zero-based position in the reference sequence.</param>
+            <param name="nuc_one">Reference allele.</param>
+            <param name="count_one">Reference allele depth.</param>
+            <param name="nuc_two">Alternative allele.</param>
+            <param name="count_two">Alternative allele depth.</param>
+            <param name="best_dose">Most likely allele dosage for each possible ploidy.</param>
+            <param name="SNP_posterior">Posterior probability of there being a SNP for each possible ploidy.</param>
+        </member>
+        <member name="T:ConPADE.ConPADE">
+            <summary>
+            Main class of ConPADE.
+            </summary>
+        </member>
         <member name="F:ConPADE.ConPADE.bamName">
             <summary>
             Path to a sorted BAM file.
@@ -19,7 +42,7 @@
             Path to substitution model file.
             </summary>
         </member>
-        <member name="F:ConPADE.ConPADE.maxPloidy">
+        <member name="F:ConPADE.ConPADE.max_ploidy">
             <summary>
             Maximum ploidy to evaluate.
             </summary>
@@ -37,6 +60,32 @@
         <member name="F:ConPADE.ConPADE.splitContigs">
             <summary>
             Store results for different contigs in separate files.
+            </summary>
+        </member>
+        <member name="M:ConPADE.ConPADE.RunFile(System.String)">
+            <summary>
+            Run ConPADE on each contig of the input BAM file.
+            </summary>
+            <param name="bamName">Name of the input BAM file.</param>
+        </member>
+        <member name="T:ConPADE.Padded_Read">
+            <summary>
+            Class to build and store padded reads.
+            The CIGAR string is used to pad insertions and deletions.
+            Read positions can then be accessed based on the alignment to the reference.
+            </summary>
+        </member>
+        <member name="M:ConPADE.Padded_Read.#ctor(Bio.IO.SAM.SAMAlignedSequence)">
+            <summary>
+            Padded_Read standard constructor.
+            </summary>
+            <param name="alignment">An input object of type SAMAlignedSequence.</param>
+        </member>
+        <member name="M:ConPADE.Padded_Read.Pad_Read">
+            <summary>
+            Pad deletions in an aligned read.
+            Create an index of insertions/deletions so that aligned
+            positions may be accessed based on reference index.
             </summary>
         </member>
     </members>

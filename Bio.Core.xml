@@ -24161,6 +24161,15 @@
             Reference sequence name.
             </summary>
         </member>
+        <member name="P:Bio.IO.SAM.SAMAlignedSequence.IsDummyRead">
+            <summary>
+            Is this read a special dummy read?  
+            
+            These read types are a special type in later BAM file formats that are designed to hold
+            annotation data. They are identified as having SEQ set to *, FLAG bits 0x100 and 0x200 set
+             (secondary and filtered), and a CT tag.
+            </summary>
+        </member>
         <member name="P:Bio.IO.SAM.SAMAlignedSequence.Pos">
             <summary>
             One-based leftmost position/coordinate of the clipped sequence.
