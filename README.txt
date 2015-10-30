@@ -4,13 +4,24 @@
 #                                                                    #
 ######################################################################
 #                                                                    #
-# Version 1.0-3                                                      #
-# Last updated: 08/26/2015                                           #
+# Version 1.0-4                                                      #
+# Last updated: 10/30/2015                                           #
 #                                                                    #
 ######################################################################
 
 
 For licensing information, please read file LICENSE.txt distributed with this package
+
+
+######################################################################
+
+
+Installing from source:
+
+- ConPADE is written in C# and can be built with any compatible compiler (Visual Studio, Xamarin Studio or MonoDevelop)
+- To compile ConPADE from source, you need to link against the .NET Bio libraries. These can be found at https://github.com/dotnetbio/bio
+
+After successfully building the binaries, make sure you also have the error model files (errorModel.bin and substModel.bin) from the main distribution folder.
 
 
 ######################################################################
@@ -70,3 +81,7 @@ Version changes:
 * 1.0-3
 - Bug fix: added support for dummy reads in BAM file
 - Bug fix: hard-clipped sequences are now correctly parsed
+
+* 1.0-4
+- First source code release
+- Removed dependency on Escience.dll
